@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="navbar">
         <ul>
@@ -16,6 +18,7 @@
         </ul>
     </div>
     <div class="content">
+        <img src="moon.png" id="icon">
         <header>
             <h1>Hello</h1>
             <h1>I'm Himanshu</h1>
@@ -24,50 +27,60 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello, I'm Himanshu Dhaka, a second-year student, and I'm passionate about game development and technology.
+            <p>Hello, I'm Himanshu Dhaka, a second-year student, and I'm passionate about game development and
+                technology.
                 Aspiring to become a game developer, I'm constantly exploring and learning new technologies to expand my
                 skillset and create innovative experiences.</p>
             <p>My journey in the world of technology and game development has just begun, but I'm excited to take on the
-                challenges and opportunities that lie ahead. I believe in the power of games to tell stories, entertain, and
+                challenges and opportunities that lie ahead. I believe in the power of games to tell stories, entertain,
+                and
                 inspire, and I'm dedicated to honing my skills to create immersive and engaging gaming experiences.</p>
             <p>Aside from game development, I have a strong desire to learn various types of technologies and stay
-                up-to-date with the ever-evolving tech landscape. Whether it's web development, mobile app development, or
+                up-to-date with the ever-evolving tech landscape. Whether it's web development, mobile app development,
+                or
                 emerging technologies, I'm always eager to explore new horizons and turn ideas into reality.</p>
         </section>
         <section id="projects">
             <h2>Projects</h2>
-    
+
             <div class="project1">
-                <img id = "project_1" src="R.png" alt="Project Image" width="150" height="150">
-                <img id = "project_1" src="R.png" alt="Project Image" width="150" height="150">
-                <img id = "project_1" src="R.png" alt="Project Image" width="150" height="150">
+                <!--<img id="project_1" src="R.png" alt="Project Image" width="150" height="150">
+                <img id="project_1" src="R.png" alt="Project Image" width="150" height="150">
+                <img id="project_1" src="R.png" alt="Project Image" width="150" height="150"> -->
 
                 <h3><a href="https://github.com/iamSt3el/Endless-Rush" target="_blank">1. Endless Rush</a></h3>
-    
+
                 <p>Welcome to "Endless Rush," a captivating game I created using C++ and Raylib. In this heart-pounding
-                    adventure, players guide a fearless character through a dynamic world teeming with obstacles, hurdles,
-                    and surprises. Your reflexes and quick thinking are your greatest assets as you strive to conquer the
+                    adventure, players guide a fearless character through a dynamic world teeming with obstacles,
+                    hurdles,
+                    and surprises. Your reflexes and quick thinking are your greatest assets as you strive to conquer
+                    the
                     ever-changing terrain. Can you top the leaderboards and secure your place as the ultimate
-                    obstacle-running champion? Get ready for an exhilarating rush that will keep you coming back for more!
+                    obstacle-running champion? Get ready for an exhilarating rush that will keep you coming back for
+                    more!
                 </p>
 
-    
-            <div class="project2">
-                <img id = "project_2" src="R.png" alt="Project Image" width="150" height="150">
-                <img id = "project_2" src="R.png" alt="Project Image" width="150" height="150">
-                <img id = "project_2" src="R.png" alt="Project Image" width="150" height="150">
 
-                <h3><a href="https://github.com/iamSt3el/Endless-Rush" target="_blank">2.Endless Rush</a></h3>
-    
-                <p>Welcome to "Endless Rush," a captivating game I created using C++ and Raylib. In this heart-pounding
-                    adventure, players guide a fearless character through a dynamic world teeming with obstacles, hurdles,
-                    and surprises. Your reflexes and quick thinking are your greatest assets as you strive to conquer the
-                    ever-changing terrain. Can you top the leaderboards and secure your place as the ultimate
-                    obstacle-running champion? Get ready for an exhilarating rush that will keep you coming back for more!
-                </p>
-            </div>
-    
-            <!-- Add more project entries as needed -->
+                <div class="project2">
+                    <!--<img id="project_2" src="R.png" alt="Project Image" width="150" height="150">
+                    <img id="project_2" src="R.png" alt="Project Image" width="150" height="150">
+                    <img id="project_2" src="R.png" alt="Project Image" width="150" height="150"> -->
+
+                    <h3><a href="https://github.com/iamSt3el/Endless-Rush" target="_blank">2.Endless Rush</a></h3>
+
+                    <p>Welcome to "Endless Rush," a captivating game I created using C++ and Raylib. In this
+                        heart-pounding
+                        adventure, players guide a fearless character through a dynamic world teeming with obstacles,
+                        hurdles,
+                        and surprises. Your reflexes and quick thinking are your greatest assets as you strive to
+                        conquer the
+                        ever-changing terrain. Can you top the leaderboards and secure your place as the ultimate
+                        obstacle-running champion? Get ready for an exhilarating rush that will keep you coming back for
+                        more!
+                    </p>
+                </div>
+
+                <!-- Add more project entries as needed -->
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
@@ -87,5 +100,20 @@
             </p>
         </section>
     </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "sun.png";
+            } else {
+                icon.src = "moon.png"
+            }
+        }
+
+    </script>
 </body>
+
 </html>
